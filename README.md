@@ -6,6 +6,10 @@ even though it should be able to handle other types of requests that do not depe
 * They should fail fast now and retry later
 * Microservices has to be fault tolerant
 
+## Timeouts
+
+Timeout pattern is good but down side of it is it waits undefined time which maybe something not wanted if the service is already got back to up and running.
+
 ## Circuit Breaker Pattern
 
 Fail fast in case of errors and enables you to perform the default or fallback operations
@@ -14,9 +18,6 @@ Fail fast in case of errors and enables you to perform the default or fallback o
 
 Making several attempts to execute a failed remote operation before giving up and reporting it as an issue.
 
-## Timeouts
-
-Set a time limit for a remote operation instead of indefinitely waiting for response.
 
 ## Health Checks
 
