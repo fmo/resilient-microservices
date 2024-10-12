@@ -10,10 +10,6 @@ even though it should be able to handle other types of requests that do not depe
 
 Timeout pattern is good but down side of it is it waits undefined time which maybe something not wanted if the service is already got back to up and running.
 
-## Circuit Breaker Pattern
-
-Fail fast in case of errors and enables you to perform the default or fallback operations
-
 ## Retry Pattern
 
 There are temproary errors which heals itself in short amount of time
@@ -23,6 +19,10 @@ There are temproary errors which heals itself in short amount of time
 * Resource exhaustion of service due to load
 
 The retry pattern enables us to retry a failed call automatically.
+
+## Circuit Breaker Pattern
+
+Fail fast in case of errors and enables you to perform the default or fallback operations
 
 ## Health Checks
 
