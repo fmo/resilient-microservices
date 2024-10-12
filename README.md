@@ -3,7 +3,8 @@
 Suppose there is no proper resiliency pattern for interservice communciaton. In that case, it can cause a cascading failure in that the Order service also becomes unreachable, 
 even though it should be able to handle other types of requests that do not depend on the Payment service.
 
-### Microservices has to be fault tolerant
+* They should fail fast now and retry later
+* Microservices has to be fault tolerant
 
 ## Circuit Breaker Pattern
 
