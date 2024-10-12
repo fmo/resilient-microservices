@@ -16,8 +16,13 @@ Fail fast in case of errors and enables you to perform the default or fallback o
 
 ## Retry Pattern
 
-Making several attempts to execute a failed remote operation before giving up and reporting it as an issue.
+There are temproary errors which heals itself in short amount of time
 
+* Instant network failures
+* Temproarily unavailable services
+* Resource exhaustion of service due to load
+
+The retry pattern enables us to retry a failed call automatically.
 
 ## Health Checks
 
